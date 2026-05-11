@@ -7,16 +7,16 @@ const skillGroups = [
     skills: ["Python", "TypeScript", "JavaScript", "C", "R"],
   },
   {
+    title: "AI & Automation",
+    skills: ["LangChain", "n8n", "OpenAI APIs", "OpenCV", "Mediapipe", "RAG Systems", "Document Processing"],
+  },
+  {
     title: "Frontend",
-    skills: ["React", "Vite", "Tailwind CSS", "Zustand", "React Hook Form", "Recharts", "shadcn/ui"],
+    skills: ["React 18", "Vite", "Tailwind CSS", "Zustand", "React Hook Form", "Recharts", "shadcn/ui"],
   },
   {
-    title: "Backend",
-    skills: ["FastAPI", "SQLAlchemy", "Pydantic", "PostgreSQL", "Node.js", "REST APIs"],
-  },
-  {
-    title: "AI & Tools",
-    skills: ["LangChain", "n8n", "OpenAI APIs", "OpenCV", "Git", "JWT Authentication", "Axios"],
+    title: "Backend & DB",
+    skills: ["FastAPI", "SQLAlchemy 2.0", "Pydantic v2", "PostgreSQL", "Node.js", "REST APIs", "JWT Auth"],
   },
 ];
 

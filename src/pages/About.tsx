@@ -41,8 +41,8 @@ export function About() {
         </div>
         <div className="space-y-6 text-base leading-8 text-muted-foreground">
           <p>
-            Vatsal Gurjar is a full stack software engineer working at Rang Digitech LLC where he
-            develops enterprise-grade systems and AI automation pipelines.
+            Vatsal Gurjar is a full-stack software engineer and AI/ML automation engineer working at
+            Rang Digitech LLC where he develops enterprise-grade systems and AI automation pipelines.
           </p>
           <p>
             He specializes in modern web development using React, FastAPI, TypeScript, and

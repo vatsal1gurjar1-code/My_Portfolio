@@ -5,17 +5,18 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 const achievements = [
   {
     title: "GTU Code Unnati Innovation Marathon",
-    description: "Top 25 nationwide finish among 600+ teams.",
+    description:
+      "Top 25 Finalist (600+ teams) nationwide; project advanced to Top 10 at GTU level. Developed in collaboration with SAP Labs India and Edunet Foundation.",
     icon: Trophy,
   },
   {
     title: "Line Follower Race 2023",
-    description: "Gold Medalist.",
+    description: "Gold Medalist at national level robotics competition.",
     icon: Medal,
   },
   {
     title: "Table Tennis College Sports Fest",
-    description: "Gold Medalist for three consecutive wins.",
+    description: "Gold Medalist (3x) for three consecutive years (2021-2024).",
     icon: Award,
   },
 ];

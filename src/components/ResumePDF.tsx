@@ -246,11 +246,11 @@ export function ResumePDF() {
           <Text style={styles.name}>
             Vatsal K. <Text style={styles.nameAccent}>Gurjar</Text>
           </Text>
-          <Text style={styles.title}>Full Stack Software Engineer</Text>
+          <Text style={styles.title}>Full Stack & AI Automation Engineer</Text>
           <View style={styles.contactRow}>
             <Text style={styles.contactItem}>Location: Vadodara, Gujarat, India</Text>
-            <Text style={styles.contactItem}>Email: vatsalgurjar.dev@gmail.com</Text>
-            <Text style={styles.contactItem}>Web: vatsal.dev</Text>
+            <Text style={styles.contactItem}>Email: vatsal1gurjar1@gmail.com</Text>
+            <Text style={styles.contactItem}>LinkedIn: linkedin.com/in/vatsalgurjar</Text>
           </View>
         </View>
 
@@ -262,9 +262,9 @@ export function ResumePDF() {
             <View style={styles.section}>
               <SectionLabel label="Summary" />
               <Text style={styles.summary}>
-                Full stack software engineer specializing in React, FastAPI, TypeScript, and
-                PostgreSQL. Builds enterprise-grade systems, AI automation pipelines, and
-                scalable web platforms. Currently working at Rang Digitech LLC delivering
+                Full-stack Software Engineer and AI/ML Automation Engineer with hands-on production
+                experience building SaaS platforms, AI automation pipelines, and role-based
+                enterprise systems. Currently working at Rang Digitech LLC delivering
                 production-grade software and intelligent automation systems.
               </Text>
             </View>
@@ -278,16 +278,16 @@ export function ResumePDF() {
                   skills: ["Python", "TypeScript", "JavaScript", "C", "R"],
                 },
                 {
+                  title: "AI & Automation",
+                  skills: ["LangChain", "n8n", "OpenAI APIs", "OpenCV", "Mediapipe", "RAG"],
+                },
+                {
                   title: "Frontend",
-                  skills: ["React", "Vite", "Tailwind CSS", "Zustand", "Recharts", "shadcn/ui"],
+                  skills: ["React 18", "Vite", "Tailwind CSS", "Zustand", "shadcn/ui"],
                 },
                 {
-                  title: "Backend",
-                  skills: ["FastAPI", "SQLAlchemy", "Pydantic", "PostgreSQL", "Node.js", "REST APIs"],
-                },
-                {
-                  title: "AI & Tools",
-                  skills: ["LangChain", "n8n", "OpenAI APIs", "OpenCV", "Git", "JWT Auth"],
+                  title: "Backend & DB",
+                  skills: ["FastAPI", "SQLAlchemy 2.0", "Pydantic v2", "PostgreSQL", "JWT Auth"],
                 },
               ].map((group) => (
                 <View key={group.title} style={styles.skillGroup}>
@@ -301,34 +301,32 @@ export function ResumePDF() {
               ))}
             </View>
 
+            {/* Certifications */}
+            <View style={styles.section}>
+              <SectionLabel label="Certifications" />
+              {[
+                { title: "Claude AI with Bedrock", issuer: "Anthropic", date: "2026" },
+                { title: "Model Context Protocol", issuer: "Anthropic", date: "2026" },
+                { title: "Machine Learning", issuer: "Stanford", date: "2024" },
+                { title: "UX Design Foundations", issuer: "Google", date: "2024" },
+              ].map((c) => (
+                <View key={c.title} style={styles.achieveEntry}>
+                  <Text style={styles.achieveTitle}>{c.title}</Text>
+                  <Text style={styles.achieveDesc}>{c.issuer} | {c.date}</Text>
+                </View>
+              ))}
+            </View>
+
             {/* Education */}
             <View style={styles.section}>
               <SectionLabel label="Education" />
               <View style={styles.entry}>
                 <View style={styles.entryHeader}>
-                  <Text style={styles.eduTitle}>B.Tech, Computer Engineering</Text>
-                  <Text style={styles.entryDuration}>2022 – 2026</Text>
+                  <Text style={styles.eduTitle}>B.Tech, Computer Science</Text>
+                  <Text style={styles.entryDuration}>2021 – 2025</Text>
                 </View>
-                <Text style={styles.entryCompany}>Gujarat Technological University</Text>
+                <Text style={styles.entryCompany}>ITM (SLS) University, Vadodara</Text>
               </View>
-            </View>
-
-            {/* Achievements */}
-            <View style={styles.section}>
-              <SectionLabel label="Achievements" />
-              {[
-                {
-                  title: "GTU Code Unnati Innovation Marathon",
-                  desc: "Top 25 nationwide among 600+ teams.",
-                },
-                { title: "Line Follower Race 2023", desc: "Gold Medalist." },
-                { title: "Table Tennis – College Sports Fest", desc: "Gold Medalist, 3 consecutive wins." },
-              ].map((a) => (
-                <View key={a.title} style={styles.achieveEntry}>
-                  <Text style={styles.achieveTitle}>{a.title}</Text>
-                  <Text style={styles.achieveDesc}>{a.desc}</Text>
-                </View>
-              ))}
             </View>
           </View>
 
@@ -344,20 +342,19 @@ export function ResumePDF() {
                   company: "Rang Digitech LLC",
                   duration: "Jan 2026 – Present",
                   points: [
-                    "Built a full-stack Daily Reporting System using React, FastAPI, and PostgreSQL.",
-                    "Implemented role-based approval workflows and KRA analytics dashboards.",
-                    "Developed a dynamic template engine for configurable reporting.",
-                    "Implemented JWT authentication and RESTful APIs.",
+                    "Developed a SaaS Daily Reporting System using React 18 and FastAPI, serving 10-25 active users.",
+                    "Built a configurable report template engine for custom KRA structures and approval workflows.",
+                    "Implemented JWT auth and used SQLAlchemy 2.0 with Pydantic v2 for data handling.",
+                    "Eliminated manual reporting through PostgreSQL-backed automation pipelines.",
                   ],
                 },
                 {
-                  title: "AI Automation Engineer (Intern)",
+                  title: "AI Automation Engineer",
                   company: "Rang Digitech LLC",
                   duration: "Sep 2025 – Dec 2025",
                   points: [
-                    "Built automation pipelines using n8n, LangChain, and OpenAI APIs.",
-                    "Integrated automation systems with a FastAPI backend.",
-                    "Reduced manual reporting through intelligent automation workflows.",
+                    "Developed AI automation pipelines using n8n, LangChain, and OpenAI APIs.",
+                    "Engineered end-to-end Python workflows connecting LLMs to business systems.",
                   ],
                 },
                 {
@@ -365,8 +362,8 @@ export function ResumePDF() {
                   company: "Hexsociety",
                   duration: "Mar 2023 – Oct 2024",
                   points: [
-                    "Led development and maintenance of the community platform.",
-                    "Managed backend infrastructure and handled technology for multiple events.",
+                    "Led development of community platform Hexsociety.in using Node.js.",
+                    "Managed tech logistics for 10+ events with 50-200 attendees.",
                   ],
                 },
                 {
@@ -374,7 +371,8 @@ export function ResumePDF() {
                   company: "MSK Solutions",
                   duration: "Feb 2024 – Apr 2024",
                   points: [
-                    "Built a multimodal translation system using OpenCV, speech-to-text, and Google APIs.",
+                    "Built gesture recognition system (OpenCV) with 84% accuracy.",
+                    "Top 10 Finalist at GTU Code Unnati Innovation Marathon.",
                   ],
                 },
               ].map((exp) => (
@@ -397,19 +395,19 @@ export function ResumePDF() {
 
               {[
                 {
-                  title: "LinkedIn Outreach Automation Platform",
-                  desc: "Streamlines LinkedIn lead generation and outreach workflows for sales teams with automated connection requests, follow-ups, and campaign analytics.",
-                  tech: ["React", "TypeScript", "Tailwind CSS", "FastAPI", "n8n"],
+                  title: "Cloverse – AI Collaborative Platform",
+                  desc: "Built full-stack platform with real-time chat, WebRTC video, and AI-driven note summarization/quiz generation.",
+                  tech: ["React", "Node.js", "WebRTC", "OpenAI", "Auth0"],
                 },
                 {
-                  title: "Cloverse – AI Collaborative Learning Platform",
-                  desc: "AI-powered platform with real-time chat, video conferencing, collaborative document editing, AI note summarization, quiz generation, and performance feedback.",
-                  tech: ["React", "Node.js", "Express", "MongoDB", "WebRTC", "OpenAI APIs", "Auth0"],
+                  title: "S-mart – Recommendation Engine",
+                  desc: "Developed personalized grocery recommendation engine using collaborative filtering and scikit-learn.",
+                  tech: ["Python", "scikit-learn", "Pandas"],
                 },
                 {
                   title: "Silence Sense",
-                  desc: "Communication system for speech and hearing impaired individuals using gesture recognition, speech-to-text, text-to-speech, and multilingual translation.",
-                  tech: ["Python", "OpenCV", "Tkinter", "Speech APIs", "Translation APIs"],
+                  desc: "Gesture-to-text translation app with 84% accuracy; integrated Google Speech/Translation APIs.",
+                  tech: ["Python", "OpenCV", "Mediapipe", "Google APIs"],
                 },
               ].map((proj) => (
                 <View key={proj.title} style={styles.projectEntry}>

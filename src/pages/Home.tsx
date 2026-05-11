@@ -47,9 +47,10 @@ export function Home() {
             Building scalable web systems, AI automation pipelines, and intelligent software platforms.
           </p>
           <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground">
-            Full stack engineer experienced in building production-grade systems using React, FastAPI,
-            TypeScript, and PostgreSQL. Currently working at Rang Digitech LLC building enterprise
-            software and AI automation systems.
+            Full-stack Software Engineer and AI/ML Automation Engineer with hands-on production
+            experience building SaaS platforms, AI automation pipelines, and role-based enterprise
+            systems. Currently working at Rang Digitech LLC building enterprise software and AI
+            automation systems.
           </p>
 
           <div className="mt-8 flex items-center gap-3 text-sm text-muted-foreground">

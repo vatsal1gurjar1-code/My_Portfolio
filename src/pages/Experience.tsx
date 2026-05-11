@@ -7,11 +7,11 @@ const experienceItems: TimelineItem[] = [
     company: "Rang Digitech LLC",
     duration: "Jan 2026 - Present",
     points: [
-      "Built a full-stack Daily Reporting System using React, FastAPI, and PostgreSQL.",
-      "Implemented role-based approval workflows.",
-      "Built KRA analytics dashboards.",
-      "Developed dynamic template engine.",
-      "Implemented JWT authentication and REST APIs.",
+      "Designed and developed a production-ready SaaS Daily Reporting System using React 18, TypeScript, and FastAPI, currently serving 10-25 active users.",
+      "Built a configurable report template engine allowing admins to define custom KRA structures and role-based approval workflows.",
+      "Implemented JWT authentication, Zustand state management, and used SQLAlchemy 2.0 with Pydantic v2 for robust data handling.",
+      "Architected a flexible hierarchy model enabling admin-defined approval chains across unlimited organizational levels.",
+      "Eliminated manual reporting processes through automated PostgreSQL-backed data pipelines.",
     ],
   },
   {
@@ -19,9 +19,9 @@ const experienceItems: TimelineItem[] = [
     company: "Rang Digitech LLC",
     duration: "Sep 2025 - Dec 2025",
     points: [
-      "Built automation pipelines using n8n, LangChain, and OpenAI APIs.",
-      "Integrated automation systems with FastAPI backend.",
-      "Reduced manual reporting through automation workflows.",
+      "Developed AI-powered automation pipelines using n8n, LangChain, and OpenAI APIs for intelligent document processing.",
+      "Engineered end-to-end Python automation workflows connecting LLMs to business systems via REST APIs.",
+      "Integrated automation systems with FastAPI backends to reduce manual workflow overhead across the organization.",
     ],
   },
   {
@@ -29,9 +29,8 @@ const experienceItems: TimelineItem[] = [
     company: "Hexsociety",
     duration: "Mar 2023 - Oct 2024",
     points: [
-      "Led development of community platform.",
-      "Managed backend infrastructure.",
-      "Handled technology for multiple events.",
+      "Led development of Hexsociety.in using Node.js, HTML, CSS, and JavaScript, building a community platform with forums and events.",
+      "Managed end-to-end technical setup, AV coordination, and logistics for 10+ community events with 50-200 attendees.",
     ],
   },
   {
@@ -39,9 +38,9 @@ const experienceItems: TimelineItem[] = [
     company: "MSK Solutions",
     duration: "Feb 2024 - Apr 2024",
     points: [
-      "Built multimodal translation system using OpenCV.",
-      "Integrated speech-to-text and text-to-speech.",
-      "Used Google APIs for translation.",
+      "Built a multimodal communication system integrating gesture recognition (OpenCV + Mediapipe), real-time speech-to-text, and multilingual translation.",
+      "Trained a custom gesture recognition model achieving 84% accuracy on a self-curated dataset.",
+      "Project advanced to Top 10 at GTU Code Unnati Innovation Marathon (600+ teams nationwide).",
     ],
   },
 ];
