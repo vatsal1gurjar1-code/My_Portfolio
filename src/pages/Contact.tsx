@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -28,16 +29,43 @@ const contactDetails = [
   },
 ];
 
+// Web3Forms endpoint configuration
+const FORM_ENDPOINT = "https://api.web3forms.com/submit";
+const WEB3FORMS_ACCESS_KEY = "57d192df-6309-4a53-b421-c4a468506397";
+
 export function Contact() {
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
   const {
     register,
     handleSubmit,
     reset,
-    formState: { errors, isSubmitSuccessful },
+    formState: { errors },
   } = useForm<ContactFormValues>();
 
-  function onSubmit() {
-    reset();
+  async function onSubmit(data: ContactFormValues) {
+    setStatus("submitting");
+    try {
+      const response = await fetch(FORM_ENDPOINT, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          ...data,
+          access_key: WEB3FORMS_ACCESS_KEY,
+        }),
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        reset();
+      } else {
+        setStatus("error");
+      }
+    } catch (error) {
+      setStatus("error");
+    }
   }
 
   return (
@@ -129,13 +157,25 @@ export function Contact() {
                 ) : null}
               </div>
 
-              <Button type="submit" size="lg">
-                Send Message
+              <Button type="submit" size="lg" disabled={status === "submitting"}>
+                {status === "submitting" ? "Sending..." : "Send Message"}
               </Button>
 
-              {isSubmitSuccessful ? (
-                <p className="text-sm text-primary">
-                  Form captured locally. Wire this to your preferred email or backend endpoint.
+              {status === "success" ? (
+                <div className="rounded-2xl border border-green-500/20 bg-green-500/10 p-4 text-sm text-green-400">
+                  ✨ Message sent successfully! I will get back to you soon.
+                </div>
+              ) : null}
+
+              {status === "error" ? (
+                <div className="rounded-2xl border border-red-500/20 bg-red-500/10 p-4 text-sm text-red-400">
+                  ❌ Failed to send message. Please check your endpoint configuration or email directly.
+                </div>
+              ) : null}
+
+              {!FORM_ENDPOINT && status === "success" ? (
+                <p className="text-xs text-muted-foreground">
+                  💡 Note: Demo success captured locally. To receive live forwarding emails, paste your Formspree URL into the <code className="text-primary">FORM_ENDPOINT</code> constant inside <code className="text-primary">Contact.tsx</code>.
                 </p>
               ) : null}
             </form>
