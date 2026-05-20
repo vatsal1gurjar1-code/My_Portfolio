@@ -23,12 +23,14 @@ export default function App() {
   const location = useLocation();
 
   return (
-    <div className="relative min-h-screen overflow-hidden">
+    <div className="relative min-h-screen">
       <Suspense fallback={<div className="pointer-events-none fixed inset-0 z-0 bg-slate-50 dark:bg-[#020617]" />}>
-        <MeshBackground />
+        <div className="overflow-hidden">
+          <MeshBackground />
+        </div>
       </Suspense>
       <Navbar />
-      <main className="relative">
+      <main className="relative overflow-visible">
         <AnimatePresence mode="wait">
           <Routes location={location} key={location.pathname}>
             <Route path="/" element={<Home />} />

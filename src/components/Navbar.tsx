@@ -56,7 +56,12 @@ export function Navbar() {
     <header className="sticky top-0 z-50 border-b border-white/10 bg-background/80 backdrop-blur-xl">
       <div className="page-shell">
         <div className="flex h-20 items-center justify-between gap-4">
-          <NavLink to="/" className="font-display text-lg font-extrabold tracking-wide">
+          <NavLink to="/" className="flex items-center gap-2.5 font-display text-lg font-extrabold tracking-wide">
+            <img
+              src="/Fevicon.png"
+              alt="Vatsal K. Gurjar logo"
+              className="h-8 w-8 rounded-lg object-cover ring-2 ring-primary/40"
+            />
             Vatsal<span className="text-gradient">.dev</span>
           </NavLink>
 

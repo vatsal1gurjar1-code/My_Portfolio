@@ -31,42 +31,52 @@ export function Home() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.4 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell overflow-visible pt-16 pb-16 sm:pt-20 sm:pb-24"
     >
       <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="relative">
-          <motion.div
-            animate={{ y: [0, -10, 0] }}
-            transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-            className="absolute -left-6 top-10 hidden rounded-full border border-primary/20 bg-primary/10 px-4 py-2 text-xs text-primary md:block"
-          >
-            <Sparkles className="mr-2 inline h-3.5 w-3.5" />
-            Full Stack Software Engineer
-          </motion.div>
 
-          <Badge className="mb-6">Available for high-impact software roles</Badge>
-          <div className="relative inline-block">
-            <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
-              Vatsal K. <span className="text-gradient">Gurjar</span>
-            </h1>
-            {/* Animated Glowing Line */}
+          {/* ── Hero name + subtitle group (moves up as one unit) ── */}
+          <div className="relative mt-2 sm:-mt-6">
+
+            {/* Floating "Full Stack Software Engineer" label */}
             <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              animate={{ opacity: 1, scaleX: 1 }}
-              transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
-              className="absolute -bottom-2 left-0 h-[3px] w-[80%] origin-left rounded-full bg-gradient-to-r from-primary via-accent to-transparent"
-            />
-            <motion.div
-              initial={{ opacity: 0, scaleX: 0 }}
-              animate={{ opacity: 0.6, scaleX: 1 }}
-              transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
-              className="absolute -bottom-2 left-0 h-[4px] w-[80%] origin-left rounded-full bg-gradient-to-r from-primary via-accent to-transparent blur-md"
-            />
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
+              className="absolute left-0 md:-left-6 -top-9 md:-top-7 flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-xs font-semibold text-primary"
+            >
+              <Sparkles className="mr-1.5 h-3 w-3 md:mr-2 md:h-3.5 md:w-3.5" />
+              Full Stack Software Engineer
+            </motion.div>
+
+            <Badge className="mb-3">Available for high-impact software roles</Badge>
+            <div className="relative inline-block">
+              <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
+                Vatsal K. <span className="text-gradient">Gurjar</span>
+              </h1>
+              {/* Animated Glowing Line */}
+              <motion.div
+                initial={{ opacity: 0, scaleX: 0 }}
+                animate={{ opacity: 1, scaleX: 1 }}
+                transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+                className="absolute -bottom-2 left-0 h-[3px] w-[80%] origin-left rounded-full bg-gradient-to-r from-primary via-accent to-transparent"
+              />
+              <motion.div
+                initial={{ opacity: 0, scaleX: 0 }}
+                animate={{ opacity: 0.6, scaleX: 1 }}
+                transition={{ delay: 0.3, duration: 1, ease: "easeOut" }}
+                className="absolute -bottom-2 left-0 h-[4px] w-[80%] origin-left rounded-full bg-gradient-to-r from-primary via-accent to-transparent blur-md"
+              />
+            </div>
+
+            {/* Subtitle moves with the name */}
+            <p className="mt-6 max-w-2xl text-xl font-medium text-foreground/90">
+              Building scalable web systems, AI automation pipelines, and intelligent software platforms.
+            </p>
           </div>
-          <p className="mt-6 max-w-2xl text-xl font-medium text-foreground/90">
-            Building scalable web systems, AI automation pipelines, and intelligent software platforms.
-          </p>
-          <p className="mt-6 max-w-2xl text-base leading-8 text-muted-foreground">
+
+          {/* ── Below stays in place (compensated margin) ── */}
+          <p className="mt-10 max-w-2xl text-base leading-8 text-muted-foreground">
             Full-stack Software Engineer and AI/ML Automation Engineer with hands-on production
             experience building SaaS platforms, AI automation pipelines, and role-based enterprise
             systems. Currently working at Rang Digitech LLC building enterprise software and AI
