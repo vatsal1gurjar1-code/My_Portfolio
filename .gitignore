@@ -18,6 +18,7 @@ build/
 # ── Vite ──────────────────────────────────────────────────────────
 *.local
 vite.config.ts.timestamp-*
+.vite/
 
 # ── TypeScript build info ─────────────────────────────────────────
 *.tsbuildinfo

@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Disallow build artifacts if ever accidentally deployed
+Disallow: /dist/
+Disallow: /.vite/
+
+Sitemap: https://vatsalgurjar.vercel.app/sitemap.xml
