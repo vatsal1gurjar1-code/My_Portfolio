@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { SEOHead } from "@/components/SEOHead";
@@ -11,14 +11,14 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>
         At Rang Digitech LLC, the team was drowning in manual daily reports sent over WhatsApp and email.
         Managers had no central visibility, and approvals were done informally. We needed a production-grade
-        <strong> SaaS Daily Reporting System</strong> — one that could handle role-based approval workflows,
+        <strong> SaaS Daily Reporting System</strong> - one that could handle role-based approval workflows,
         configurable KRA structures, and real-time data across the organisation.
       </p>
 
       <h2>The Tech Stack</h2>
       <p>
         We chose <strong>React 18 + Vite</strong> for the frontend for its fast HMR and excellent TypeScript
-        support. <strong>FastAPI</strong> powered the backend — its async performance and automatic OpenAPI docs
+        support. <strong>FastAPI</strong> powered the backend - its async performance and automatic OpenAPI docs
         made it perfect for a data-heavy application. <strong>PostgreSQL</strong> with <strong>SQLAlchemy 2.0</strong>{" "}
         and <strong>Pydantic v2</strong> gave us strict schema validation and efficient ORM queries.
       </p>
@@ -27,13 +27,13 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>
         JWT authentication is handled server-side with FastAPI's dependency injection. On the frontend,
         <strong> Zustand</strong> manages auth state and the active report context. We deliberately avoided
-        Redux — Zustand's minimal API kept the bundle lean and the code readable.
+        Redux - Zustand's minimal API kept the bundle lean and the code readable.
       </p>
 
       <h2>Role-Based Approval Workflows</h2>
       <p>
-        The most complex feature was the multi-level approval chain. Admins define the hierarchy —
-        Team Lead → Manager → Director — and the system routes each daily report through those levels
+        The most complex feature was the multi-level approval chain. Admins define the hierarchy -
+        Team Lead → Manager → Director - and the system routes each daily report through those levels
         automatically. SQLAlchemy handles the recursive approval chain model cleanly via self-referential
         foreign keys on the <code>approval_levels</code> table.
       </p>
@@ -66,7 +66,7 @@ const blogContent: Record<string, React.ReactNode> = {
 
       <h2>Why n8n + LangChain?</h2>
       <p>
-        <strong>n8n</strong> is a self-hostable workflow automation tool — think Zapier but with full
+        <strong>n8n</strong> is a self-hostable workflow automation tool - think Zapier but with full
         code access. It handles triggers, routing, and integrations visually. <strong>LangChain</strong>{" "}
         sits inside n8n's Python nodes to chain LLM calls, embeddings, and retrieval-augmented generation (RAG).
         Together they form a powerful <strong>AI automation pipeline</strong>.
@@ -82,7 +82,7 @@ const blogContent: Record<string, React.ReactNode> = {
       <h2>Connecting to FastAPI</h2>
       <p>
         We exposed business logic as FastAPI endpoints that n8n calls via HTTP nodes. This kept the LLM
-        logic decoupled from the business layer — a clean separation that made testing and iteration much
+        logic decoupled from the business layer - a clean separation that made testing and iteration much
         easier for our <strong>Python automation workflows</strong>.
       </p>
 
@@ -90,7 +90,7 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>
         Design your LLM prompts as versioned templates. Use structured output (JSON mode / Pydantic models)
         to make LLM responses deterministic. And always add a human-in-the-loop review step for high-stakes
-        decisions — <strong>AI automation</strong> augments humans, it doesn't replace judgement.
+        decisions - <strong>AI automation</strong> augments humans, it doesn't replace judgement.
       </p>
     </article>
   ),
@@ -99,7 +99,7 @@ const blogContent: Record<string, React.ReactNode> = {
     <article className="prose prose-invert max-w-none">
       <h2>Starting Out: Python and Machine Learning</h2>
       <p>
-        My first serious project was <strong>Silence Sense</strong> — an accessibility web app using
+        My first serious project was <strong>Silence Sense</strong> - an accessibility web app using
         Python, OpenCV, and Mediapipe. I didn't know React existed. I barely knew what a REST API was.
         That project taught me that real <strong>software engineering</strong> is about solving problems,
         not knowing every framework.
@@ -108,15 +108,15 @@ const blogContent: Record<string, React.ReactNode> = {
       <h2>The Web Development Jump</h2>
       <p>
         When I joined Hexsociety as Web Management Head, I was writing plain HTML, CSS, and JavaScript.
-        Then I discovered <strong>React</strong> — and everything changed. Component thinking, state
+        Then I discovered <strong>React</strong> - and everything changed. Component thinking, state
         management, declarative UI. It clicked immediately. This was the foundation of my
         <strong> full-stack web development</strong> journey.
       </p>
 
       <h2>Going Full Stack with FastAPI</h2>
       <p>
-        Node.js was my first backend. But when I discovered <strong>FastAPI</strong> — async Python,
-        automatic docs, Pydantic validation — I made the switch. Paired with <strong>PostgreSQL</strong>{" "}
+        Node.js was my first backend. But when I discovered <strong>FastAPI</strong> - async Python,
+        automatic docs, Pydantic validation - I made the switch. Paired with <strong>PostgreSQL</strong>{" "}
         and SQLAlchemy, it gave me a backend stack I could ship production systems on with confidence.
       </p>
 
@@ -130,7 +130,7 @@ const blogContent: Record<string, React.ReactNode> = {
 
       <h2>Advice for Aspiring Web Developers</h2>
       <p>
-        Pick one thing, go deep, ship something real. A deployed project — no matter how small — teaches
+        Pick one thing, go deep, ship something real. A deployed project - no matter how small - teaches
         you more than 10 courses. Your <strong>web developer portfolio</strong> is your strongest job application.
       </p>
     </article>
@@ -142,7 +142,7 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>
         Speech and hearing impairment affects hundreds of millions globally. Most communication tools
         require the other person to know sign language. <strong>Silence Sense</strong> was built to
-        remove that barrier — an <strong>assistive technology</strong> application that translates hand
+        remove that barrier - an <strong>assistive technology</strong> application that translates hand
         gestures to speech in real time, using only a standard webcam.
       </p>
 
@@ -158,7 +158,7 @@ const blogContent: Record<string, React.ReactNode> = {
       <p>
         Recognised gestures are assembled into words and sentences. The text-to-speech conversion uses
         Python's <strong>pyttsx3</strong> library for offline synthesis. For reverse communication
-        (speech-to-text), we integrated Google's Speech Recognition API — keeping the full pipeline
+        (speech-to-text), we integrated Google's Speech Recognition API - keeping the full pipeline
         real-time and bilingual.
       </p>
 
@@ -171,7 +171,7 @@ const blogContent: Record<string, React.ReactNode> = {
 
       <h2>Competition Result</h2>
       <p>
-        Silence Sense was submitted to the <strong>GTU Code Unnati Innovation Marathon</strong> — a
+        Silence Sense was submitted to the <strong>GTU Code Unnati Innovation Marathon</strong> - a
         national competition with 600+ teams, developed in collaboration with SAP Labs India and Edunet
         Foundation. We advanced to the <strong>Top 10 at the GTU level</strong>. The project validated
         that <strong>machine learning for accessibility</strong> has immediate real-world impact.

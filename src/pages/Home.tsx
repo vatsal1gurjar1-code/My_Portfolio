@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Briefcase, Download, FileText, Mail, MapPin, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -29,8 +29,8 @@ export function Home() {
   return (
     <>
     <SEOHead
-      title="Vatsal K. Gurjar | Full Stack Software Engineer & Web Developer Portfolio — India"
-      description="Vatsal K. Gurjar — Full Stack Software Engineer & Web Developer from Vadodara, India. React, TypeScript, FastAPI, PostgreSQL, AI automation. Portfolio of SaaS systems, web apps & AI pipelines. Open to full-time roles."
+      title="Vatsal K. Gurjar | Full Stack Software Engineer & Web Developer Portfolio - India"
+      description="Vatsal K. Gurjar - Full Stack Software Engineer & Web Developer from Vadodara, India. React, TypeScript, FastAPI, PostgreSQL, AI automation. Portfolio of SaaS systems, web apps & AI pipelines. Open to full-time roles."
       canonical="/"
     />
     <motion.section

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -9,7 +9,7 @@ export const blogPosts = [
     slug: "building-saas-reporting-system-react-fastapi",
     title: "Building a Production SaaS Daily Reporting System with React 18 & FastAPI",
     excerpt:
-      "How I designed and shipped a role-based approval reporting SaaS used by 10–25 active users — covering the React 18 frontend, FastAPI backend, PostgreSQL schema design, JWT auth, and Zustand state management.",
+      "How I designed and shipped a role-based approval reporting SaaS used by 10–25 active users - covering the React 18 frontend, FastAPI backend, PostgreSQL schema design, JWT auth, and Zustand state management.",
     date: "2026-05-10",
     readTime: "8 min read",
     tags: ["React", "FastAPI", "SaaS", "PostgreSQL", "TypeScript"],
@@ -19,7 +19,7 @@ export const blogPosts = [
     slug: "automating-business-workflows-langchain-n8n",
     title: "How I Automated Business Workflows with LangChain and n8n",
     excerpt:
-      "A practical guide to building AI-powered automation pipelines — using n8n as the orchestration layer, LangChain for LLM chaining, and FastAPI to expose business logic as REST APIs.",
+      "A practical guide to building AI-powered automation pipelines - using n8n as the orchestration layer, LangChain for LLM chaining, and FastAPI to expose business logic as REST APIs.",
     date: "2026-04-22",
     readTime: "6 min read",
     tags: ["LangChain", "n8n", "AI Automation", "Python", "FastAPI"],
@@ -29,7 +29,7 @@ export const blogPosts = [
     slug: "full-stack-engineer-journey-tech-stack",
     title: "From Intern to Full-Stack Engineer: My Tech Stack Journey",
     excerpt:
-      "How I went from building gesture-recognition projects to shipping production SaaS platforms — the web development tools, frameworks, and skills that shaped my journey as a full-stack software engineer.",
+      "How I went from building gesture-recognition projects to shipping production SaaS platforms - the web development tools, frameworks, and skills that shaped my journey as a full-stack software engineer.",
     date: "2026-04-05",
     readTime: "5 min read",
     tags: ["Career", "Full Stack", "Web Development", "React", "Python"],
@@ -37,9 +37,9 @@ export const blogPosts = [
   },
   {
     slug: "gesture-recognition-accessibility-silence-sense",
-    title: "Gesture Recognition for Accessibility — Building Silence Sense",
+    title: "Gesture Recognition for Accessibility - Building Silence Sense",
     excerpt:
-      "Inside the build of Silence Sense — an assistive technology web app using OpenCV and Mediapipe for real-time hand gesture recognition, achieving 84% accuracy and advancing to Top 10 at the GTU Innovation Marathon.",
+      "Inside the build of Silence Sense - an assistive technology web app using OpenCV and Mediapipe for real-time hand gesture recognition, achieving 84% accuracy and advancing to Top 10 at the GTU Innovation Marathon.",
     date: "2026-03-18",
     readTime: "7 min read",
     tags: ["Python", "OpenCV", "Accessibility", "Machine Learning", "Mediapipe"],
@@ -58,7 +58,7 @@ export function Blog() {
     >
       <SEOHead
         title="Blog | Web Development & AI Automation Tips by Vatsal K. Gurjar"
-        description="Technical blog by Vatsal K. Gurjar — Full Stack Software Engineer. Articles on React, FastAPI, SaaS development, AI automation with LangChain and n8n, PostgreSQL, and software engineering career tips."
+        description="Technical blog by Vatsal K. Gurjar - Full Stack Software Engineer. Articles on React, FastAPI, SaaS development, AI automation with LangChain and n8n, PostgreSQL, and software engineering career tips."
         canonical="/blog"
       />
 

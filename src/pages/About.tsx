@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { BriefcaseBusiness, Cpu, Database, Layers3 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SEOHead } from "@/components/SEOHead";
@@ -37,8 +37,8 @@ export function About() {
       className="page-shell py-16 sm:py-24"
     >
       <SEOHead
-        title="About Vatsal K. Gurjar | React & FastAPI Web Developer — Vadodara, India"
-        description="Learn about Vatsal K. Gurjar — Full Stack Software Engineer and Web Developer from Vadodara, Gujarat, India. Specializing in React, FastAPI, TypeScript, PostgreSQL, and AI automation pipelines."
+        title="About Vatsal K. Gurjar | React & FastAPI Web Developer - Vadodara, India"
+        description="Learn about Vatsal K. Gurjar - Full Stack Software Engineer and Web Developer from Vadodara, Gujarat, India. Specializing in React, FastAPI, TypeScript, PostgreSQL, and AI automation pipelines."
         canonical="/about"
       />
 
@@ -60,7 +60,7 @@ export function About() {
           </p>
           <p>
             His work sits at the intersection of frontend architecture, backend reliability, operational analytics,
-            and AI-driven workflow automation — making him a versatile full-stack web developer and engineer.
+            and AI-driven workflow automation - making him a versatile full-stack web developer and engineer.
           </p>
           <div className="flex flex-wrap gap-3 pt-2">
             <Link to="/projects" className="text-sm font-medium text-primary hover:underline">View Projects →</Link>

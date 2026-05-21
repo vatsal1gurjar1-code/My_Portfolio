@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Timeline, type TimelineItem } from "@/components/Timeline";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
@@ -57,8 +57,8 @@ export function Experience() {
       className="page-shell py-16 sm:py-24"
     >
       <SEOHead
-        title="Work Experience | Full Stack Engineer & AI Developer — Vatsal K. Gurjar"
-        description="Work experience of Vatsal K. Gurjar — Junior Software Engineer at Rang Digitech LLC. React 18, FastAPI, TypeScript, PostgreSQL SaaS development. AI automation pipelines with LangChain and n8n."
+        title="Work Experience | Full Stack Engineer & AI Developer - Vatsal K. Gurjar"
+        description="Work experience of Vatsal K. Gurjar - Junior Software Engineer at Rang Digitech LLC. React 18, FastAPI, TypeScript, PostgreSQL SaaS development. AI automation pipelines with LangChain and n8n."
         canonical="/experience"
       />
 
@@ -66,7 +66,7 @@ export function Experience() {
         <h2 className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Experience</h2>
         <h1 className="section-title mt-4">Career timeline across software engineering and AI automation roles.</h1>
         <p className="section-copy mt-4">
-          From AI automation intern to full-stack software engineer — building production SaaS platforms,
+          From AI automation intern to full-stack software engineer - building production SaaS platforms,
           enterprise reporting systems, and intelligent automation pipelines.
         </p>
       </div>

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { Award, Medal, Trophy } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SEOHead } from "@/components/SEOHead";
@@ -32,14 +32,14 @@ export function Achievements() {
       className="page-shell py-16 sm:py-24"
     >
       <SEOHead
-        title="Achievements | Vatsal K. Gurjar — Software Developer Portfolio"
-        description="Achievements of Vatsal K. Gurjar — GTU Code Unnati Innovation Marathon Top 10 Finalist (600+ teams), national robotics gold medalist, and multi-year college sports champion. Full Stack Software Engineer portfolio."
+        title="Achievements | Vatsal K. Gurjar - Software Developer Portfolio"
+        description="Achievements of Vatsal K. Gurjar - GTU Code Unnati Innovation Marathon Top 10 Finalist (600+ teams), national robotics gold medalist, and multi-year college sports champion. Full Stack Software Engineer portfolio."
         canonical="/achievements"
       />
       <div className="mb-12">
         <h2 className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Achievements</h2>
         <h1 className="section-title mt-4">Recognition in engineering, innovation, and competition.</h1>
-        <p className="section-copy mt-4">From national-level hackathon finalist to robotics gold medalist — a track record of excellence inside and outside of software engineering.</p>
+        <p className="section-copy mt-4">From national-level hackathon finalist to robotics gold medalist - a track record of excellence inside and outside of software engineering.</p>
       </div>
 
       <div className="grid gap-6 lg:grid-cols-3">

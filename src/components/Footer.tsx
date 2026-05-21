@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+﻿import { Github, Linkedin, Mail, MapPin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const socialLinks = [
@@ -21,7 +21,7 @@ export function Footer() {
   return (
     <footer className="relative z-10 border-t border-white/10 py-12">
       <div className="page-shell">
-        {/* Top row — brand + social */}
+        {/* Top row - brand + social */}
         <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
           <div>
             <p className="font-display text-xl font-bold">Vatsal K. Gurjar</p>
@@ -54,7 +54,7 @@ export function Footer() {
           </div>
         </div>
 
-        {/* Internal site links — crawlable by Google */}
+        {/* Internal site links - crawlable by Google */}
         <nav aria-label="Site links" className="mt-8 border-t border-white/10 pt-6">
           <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground">
             Quick Links

@@ -1,4 +1,4 @@
-import { lazy, Suspense } from "react";
+﻿import { lazy, Suspense } from "react";
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import { Footer } from "@/components/Footer";
@@ -15,7 +15,7 @@ import { Skills } from "@/pages/Skills";
 import { Blog } from "@/pages/Blog";
 import { BlogPost } from "@/pages/BlogPost";
 
-// Lazy-loaded: Three.js + react-three-fiber are ~500 KB — keep them out of the
+// Lazy-loaded: Three.js + react-three-fiber are ~500 KB - keep them out of the
 // initial bundle so the first paint is fast. The canvas fades in asynchronously.
 const MeshBackground = lazy(() =>
   import("@/components/MeshBackground").then((m) => ({ default: m.MeshBackground }))

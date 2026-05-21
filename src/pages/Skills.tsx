@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+﻿import { motion } from "framer-motion";
 import { SkillCard } from "@/components/SkillCard";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
@@ -32,8 +32,8 @@ export function Skills() {
       className="page-shell py-16 sm:py-24"
     >
       <SEOHead
-        title="Technical Skills | React, TypeScript, FastAPI, PostgreSQL — Vatsal K. Gurjar"
-        description="Full technical skills of Vatsal K. Gurjar — React 18, TypeScript, Python, FastAPI, PostgreSQL, LangChain, Node.js, AI automation. Full Stack Web Developer and Software Engineer skill set."
+        title="Technical Skills | React, TypeScript, FastAPI, PostgreSQL - Vatsal K. Gurjar"
+        description="Full technical skills of Vatsal K. Gurjar - React 18, TypeScript, Python, FastAPI, PostgreSQL, LangChain, Node.js, AI automation. Full Stack Web Developer and Software Engineer skill set."
         canonical="/skills"
       />
 
