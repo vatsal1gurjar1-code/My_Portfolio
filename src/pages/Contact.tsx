@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { SEOHead } from "@/components/SEOHead";
 
 type ContactFormValues = {
   name: string;
@@ -76,12 +77,17 @@ export function Contact() {
       transition={{ duration: 0.35 }}
       className="page-shell py-16 sm:py-24"
     >
+      <SEOHead
+        title="Contact Vatsal K. Gurjar | Hire a Full Stack Web Developer — Vadodara, India"
+        description="Get in touch with Vatsal K. Gurjar — Full Stack Software Engineer and Web Developer available for full-time roles, freelance projects, and consulting. Based in Vadodara, Gujarat, India."
+        canonical="/contact"
+      />
       <div className="mb-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Contact</p>
-        <h1 className="section-title mt-4">Start a conversation.</h1>
+        <h2 className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Contact</h2>
+        <h1 className="section-title mt-4">Hire a Full Stack Software Engineer — let's talk.</h1>
         <p className="section-copy mt-4">
-          Use the form for direct outreach or contact Vatsal through phone and email for roles,
-          collaborations, and consulting.
+          Available for full-time software engineering roles, freelance web development projects, and consulting.
+          Reach out via the form, email, or phone.
         </p>
       </div>
 

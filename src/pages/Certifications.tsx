@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { ExternalLink, FileCheck, GraduationCap, ShieldCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
+import { SEOHead } from "@/components/SEOHead";
 
 const certifications = [
   {
@@ -55,14 +56,17 @@ export function Certifications() {
       transition={{ duration: 0.35 }}
       className="page-shell py-16 sm:py-24"
     >
+      <SEOHead
+        title="Certifications | Vatsal K. Gurjar — AI, Machine Learning & Software Developer"
+        description="Professional certifications of Vatsal K. Gurjar — Claude AI with Amazon Bedrock (Anthropic), Model Context Protocol, Supervised Machine Learning (Stanford), Google UX Design. Full Stack Software Engineer credentials."
+        canonical="/certifications"
+      />
       <div className="mb-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">
-          Credentials
-        </p>
-        <h1 className="section-title mt-4">Verified expertise and certifications.</h1>
+        <h2 className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Credentials</h2>
+        <h1 className="section-title mt-4">Verified expertise and certifications in AI, ML & software engineering.</h1>
         <p className="section-copy mt-4">
-          A collection of professional certifications from industry-leading institutions in AI,
-          Machine Learning, and Software Engineering.
+          Professional certifications from industry-leading institutions — Anthropic, Stanford University,
+          and Google — covering AI engineering, machine learning, and software development.
         </p>
       </div>
 

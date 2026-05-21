@@ -12,6 +12,8 @@ import { Home } from "@/pages/Home";
 import { Projects } from "@/pages/Projects";
 import { ProjectDetail } from "@/pages/ProjectDetail";
 import { Skills } from "@/pages/Skills";
+import { Blog } from "@/pages/Blog";
+import { BlogPost } from "@/pages/BlogPost";
 
 // Lazy-loaded: Three.js + react-three-fiber are ~500 KB — keep them out of the
 // initial bundle so the first paint is fast. The canvas fades in asynchronously.
@@ -42,6 +44,8 @@ export default function App() {
             <Route path="/certifications" element={<Certifications />} />
             <Route path="/achievements" element={<Achievements />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/blog/:slug" element={<BlogPost />} />
           </Routes>
         </AnimatePresence>
       </main>

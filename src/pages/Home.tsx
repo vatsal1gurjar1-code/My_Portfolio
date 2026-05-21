@@ -9,6 +9,7 @@ import StartupResumeUrl from "@/Resume/Vatsal_Gurjar_Resume_Startup.docx";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { SEOHead } from "@/components/SEOHead";
 
 const currentBuilds = [
   "AI automation pipelines using LangChain and OpenAI APIs",
@@ -26,6 +27,12 @@ export function Home() {
   const [showResumeOptions, setShowResumeOptions] = useState(false);
 
   return (
+    <>
+    <SEOHead
+      title="Vatsal K. Gurjar | Full Stack Software Engineer & Web Developer Portfolio — India"
+      description="Vatsal K. Gurjar — Full Stack Software Engineer & Web Developer from Vadodara, India. React, TypeScript, FastAPI, PostgreSQL, AI automation. Portfolio of SaaS systems, web apps & AI pipelines. Open to full-time roles."
+      canonical="/"
+    />
     <motion.section
       initial={{ opacity: 0, y: 18 }}
       animate={{ opacity: 1, y: 0 }}
@@ -215,5 +222,6 @@ export function Home() {
         </div>
       </div>
     </motion.section>
+    </>
   );
 }

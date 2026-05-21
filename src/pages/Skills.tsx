@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { SkillCard } from "@/components/SkillCard";
+import { SEOHead } from "@/components/SEOHead";
+import { Link } from "react-router-dom";
 
 const skillGroups = [
   {
@@ -29,12 +31,18 @@ export function Skills() {
       transition={{ duration: 0.35 }}
       className="page-shell py-16 sm:py-24"
     >
+      <SEOHead
+        title="Technical Skills | React, TypeScript, FastAPI, PostgreSQL — Vatsal K. Gurjar"
+        description="Full technical skills of Vatsal K. Gurjar — React 18, TypeScript, Python, FastAPI, PostgreSQL, LangChain, Node.js, AI automation. Full Stack Web Developer and Software Engineer skill set."
+        canonical="/skills"
+      />
+
       <div className="mb-12">
-        <p className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Skills</p>
+        <h2 className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Skills</h2>
         <h1 className="section-title mt-4">A stack built for modern product engineering.</h1>
         <p className="section-copy mt-4">
-          Strong across frontend systems, backend APIs, automation tooling, and AI-assisted
-          product workflows.
+          Strong across frontend web development, backend APIs, AI automation tooling, and data-driven
+          product workflows. From React and TypeScript to FastAPI and PostgreSQL.
         </p>
       </div>
 
@@ -42,6 +50,11 @@ export function Skills() {
         {skillGroups.map((group) => (
           <SkillCard key={group.title} title={group.title} skills={group.skills} />
         ))}
+      </div>
+
+      <div className="mt-10 flex flex-wrap gap-4">
+        <Link to="/projects" className="text-sm font-medium text-primary hover:underline">See Projects →</Link>
+        <Link to="/experience" className="text-sm font-medium text-primary hover:underline">Work Experience →</Link>
       </div>
     </motion.section>
   );

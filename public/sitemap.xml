@@ -2,59 +2,122 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
   <url>
-    <loc>https://vatsalgurjar.vercel.app/</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://vatsalgurjar.vercel.app/about</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://vatsalgurjar.vercel.app/projects</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://vatsalgurjar.vercel.app/experience</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/about</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://vatsalgurjar.vercel.app/skills</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/projects</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/projects/silence-sense</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://vatsalgurjar.vercel.app/certifications</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/projects/cloverse</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/projects/s-mart</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/projects/linkedin-outreach</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/skills</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/experience</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/certifications</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://vatsalgurjar.vercel.app/achievements</loc>
-    <lastmod>2026-05-20</lastmod>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/achievements</loc>
+    <lastmod>2026-05-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://vatsalgurjar.vercel.app/contact</loc>
-    <lastmod>2026-05-20</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.5</priority>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/blog</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/blog/building-saas-reporting-system-react-fastapi</loc>
+    <lastmod>2026-05-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/blog/automating-business-workflows-langchain-n8n</loc>
+    <lastmod>2026-04-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/blog/full-stack-engineer-journey-tech-stack</loc>
+    <lastmod>2026-04-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/blog/gesture-recognition-accessibility-silence-sense</loc>
+    <lastmod>2026-03-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://vatsalkgurjarportfolio.vercel.app/contact</loc>
+    <lastmod>2026-05-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 
 </urlset>
