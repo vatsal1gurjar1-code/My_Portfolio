@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import { ArrowRight, Calendar, Clock } from "lucide-react";
 import { Card, CardContent, CardHeader } from "@/components/ui/card";
@@ -54,11 +54,11 @@ export function Blog() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Blog | Web Development & AI Automation Tips by Vatsal K. Gurjar"
-        description="Technical blog by Vatsal K. Gurjar - Full Stack Software Engineer. Articles on React, FastAPI, SaaS development, AI automation with LangChain and n8n, PostgreSQL, and software engineering career tips."
+        title="Blog | Vatsal K. Gurjar"
+        description="Technical blog by Vatsal K. Gurjar. Articles on React, FastAPI, SaaS development, PostgreSQL, and AI automation with LangChain and n8n."
         canonical="/blog"
       />
 

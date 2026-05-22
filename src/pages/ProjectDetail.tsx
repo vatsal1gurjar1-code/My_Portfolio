@@ -26,7 +26,7 @@ export function ProjectDetail() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.4 }}
-      className="page-shell py-12 sm:py-20"
+      className="page-shell pt-6 pb-12 sm:pt-10 sm:pb-20"
     >
       <Link
         to="/projects"
@@ -65,7 +65,7 @@ export function ProjectDetail() {
           </div>
         </div>
 
-        <div className="space-y-10">
+        <div className="space-y-10 lg:sticky lg:top-28 lg:self-start">
           <div className="rounded-3xl border border-white/10 bg-secondary/20 p-8">
             <h3 className="mb-6 text-xl font-semibold">Key Features</h3>
             <ul className="space-y-4">

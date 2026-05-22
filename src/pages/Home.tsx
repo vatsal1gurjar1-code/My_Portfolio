@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Briefcase, Download, FileText, Mail, MapPin, Sparkles } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -29,8 +29,8 @@ export function Home() {
   return (
     <>
     <SEOHead
-      title="Vatsal K. Gurjar | Full Stack Software Engineer & Web Developer Portfolio - India"
-      description="Vatsal K. Gurjar - Full Stack Software Engineer & Web Developer from Vadodara, India. React, TypeScript, FastAPI, PostgreSQL, AI automation. Portfolio of SaaS systems, web apps & AI pipelines. Open to full-time roles."
+      title="Vatsal K. Gurjar | Full Stack Engineer"
+      description="Vatsal K. Gurjar - Full Stack Software Engineer from Vadodara, India. Explore my portfolio of React + FastAPI SaaS systems, AI automation, and web apps."
       canonical="/"
     />
     <motion.section
@@ -38,25 +38,14 @@ export function Home() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.4 }}
-      className="page-shell overflow-visible pt-16 pb-16 sm:pt-20 sm:pb-24"
+      className="page-shell overflow-visible pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr]">
         <div className="relative">
 
-          {/* ── Hero name + subtitle group (moves up as one unit) ── */}
-          <div className="relative mt-2 sm:-mt-6">
+          {/* ── Hero name + subtitle group ── */}
+          <div className="relative">
 
-            {/* Floating "Full Stack Software Engineer" label */}
-            <motion.div
-              animate={{ y: [0, -10, 0] }}
-              transition={{ duration: 7, repeat: Number.POSITIVE_INFINITY, ease: "easeInOut" }}
-              className="absolute left-0 md:-left-6 -top-9 md:-top-7 flex items-center rounded-full border border-primary/20 bg-primary/10 px-3 py-1.5 md:px-4 md:py-2 text-[10px] md:text-xs font-semibold text-primary"
-            >
-              <Sparkles className="mr-1.5 h-3 w-3 md:mr-2 md:h-3.5 md:w-3.5" />
-              Full Stack Software Engineer
-            </motion.div>
-
-            <Badge className="mb-3">Available for high-impact software roles</Badge>
             <div className="relative inline-block">
               <h1 className="font-display text-5xl font-extrabold tracking-tight sm:text-6xl lg:text-7xl">
                 Vatsal K. <span className="text-gradient">Gurjar</span>

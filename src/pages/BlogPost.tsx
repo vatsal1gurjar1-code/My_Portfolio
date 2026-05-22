@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Link, useParams, Navigate } from "react-router-dom";
 import { ArrowLeft, Calendar, Clock, Tag } from "lucide-react";
 import { SEOHead } from "@/components/SEOHead";
@@ -194,7 +194,7 @@ export function BlogPost() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
         title={`${post.title} | Vatsal K. Gurjar Blog`}

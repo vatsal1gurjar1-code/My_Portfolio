@@ -1,4 +1,4 @@
-﻿import { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Mail, MapPin, Phone } from "lucide-react";
 import { useForm } from "react-hook-form";
@@ -75,19 +75,18 @@ export function Contact() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Contact Vatsal K. Gurjar | Hire a Full Stack Web Developer - Vadodara, India"
-        description="Get in touch with Vatsal K. Gurjar - Full Stack Software Engineer and Web Developer available for full-time roles, freelance projects, and consulting. Based in Vadodara, Gujarat, India."
+        title="Contact Vatsal K. Gurjar | Full Stack Engineer"
+        description="Get in touch with Vatsal K. Gurjar - Full Stack Software Engineer and Web Developer available for full-time roles. Based in Vadodara, Gujarat, India."
         canonical="/contact"
       />
       <div className="mb-12">
         <h2 className="text-sm font-semibold uppercase tracking-[0.26em] text-primary">Contact</h2>
         <h1 className="section-title mt-4">Hire a Full Stack Software Engineer - let's talk.</h1>
         <p className="section-copy mt-4">
-          Available for full-time software engineering roles, freelance web development projects, and consulting.
-          Reach out via the form, email, or phone.
+          Available for full-time software engineering roles. Reach out via the form, email, or phone.
         </p>
       </div>
 

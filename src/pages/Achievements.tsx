@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Award, Medal, Trophy } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SEOHead } from "@/components/SEOHead";
@@ -29,11 +29,11 @@ export function Achievements() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Achievements | Vatsal K. Gurjar - Software Developer Portfolio"
-        description="Achievements of Vatsal K. Gurjar - GTU Code Unnati Innovation Marathon Top 10 Finalist (600+ teams), national robotics gold medalist, and multi-year college sports champion. Full Stack Software Engineer portfolio."
+        title="Achievements | Vatsal K. Gurjar"
+        description="Key achievements of Vatsal K. Gurjar: GTU Code Unnati Innovation Marathon Top 10 Finalist, national robotics gold medalist, and college sports champion."
         canonical="/achievements"
       />
       <div className="mb-12">

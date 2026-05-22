@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
@@ -75,11 +75,11 @@ export function Projects() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Projects | Web Developer Portfolio - React, FastAPI, AI Apps | Vatsal K. Gurjar"
-        description="Portfolio projects by Vatsal K. Gurjar - Assistive technology apps, AI-powered EdTech SaaS platforms, machine learning recommendation systems, and B2B sales automation tools built with React, Python, FastAPI."
+        title="Projects Portfolio | Vatsal K. Gurjar"
+        description="Portfolio projects by Vatsal K. Gurjar - SaaS platforms, machine learning recommendation systems, and B2B automation tools built with React & FastAPI."
         canonical="/projects"
       />
 

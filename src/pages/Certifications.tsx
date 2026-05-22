@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { ExternalLink, FileCheck, GraduationCap, ShieldCheck } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { buttonVariants } from "@/components/ui/button";
@@ -54,11 +54,11 @@ export function Certifications() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Certifications | Vatsal K. Gurjar - AI, Machine Learning & Software Developer"
-        description="Professional certifications of Vatsal K. Gurjar - Claude AI with Amazon Bedrock (Anthropic), Model Context Protocol, Supervised Machine Learning (Stanford), Google UX Design. Full Stack Software Engineer credentials."
+        title="Certifications | Vatsal K. Gurjar"
+        description="Certifications of Vatsal K. Gurjar including Claude AI with Amazon Bedrock, Stanford Machine Learning, Google UX Design, and Model Context Protocol."
         canonical="/certifications"
       />
       <div className="mb-12">

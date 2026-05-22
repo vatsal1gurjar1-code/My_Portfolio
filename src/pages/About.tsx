@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { BriefcaseBusiness, Cpu, Database, Layers3 } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SEOHead } from "@/components/SEOHead";
@@ -34,11 +34,11 @@ export function About() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="About Vatsal K. Gurjar | React & FastAPI Web Developer - Vadodara, India"
-        description="Learn about Vatsal K. Gurjar - Full Stack Software Engineer and Web Developer from Vadodara, Gujarat, India. Specializing in React, FastAPI, TypeScript, PostgreSQL, and AI automation pipelines."
+        title="About Vatsal K. Gurjar | Web Developer"
+        description="Learn about Vatsal K. Gurjar, a Full Stack Software Engineer from Vadodara, India. Specializing in React, FastAPI, PostgreSQL, and AI automation pipelines."
         canonical="/about"
       />
 

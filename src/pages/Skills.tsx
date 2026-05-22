@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { SkillCard } from "@/components/SkillCard";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
@@ -29,11 +29,11 @@ export function Skills() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Technical Skills | React, TypeScript, FastAPI, PostgreSQL - Vatsal K. Gurjar"
-        description="Full technical skills of Vatsal K. Gurjar - React 18, TypeScript, Python, FastAPI, PostgreSQL, LangChain, Node.js, AI automation. Full Stack Web Developer and Software Engineer skill set."
+        title="Technical Skills | Vatsal K. Gurjar"
+        description="Technical skills of Vatsal K. Gurjar. Proficient in React 18, TypeScript, Python, FastAPI, PostgreSQL, LangChain, Node.js, and AI automation workflows."
         canonical="/skills"
       />
 

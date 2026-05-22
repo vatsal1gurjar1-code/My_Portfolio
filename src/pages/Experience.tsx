@@ -1,4 +1,4 @@
-﻿import { motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { Timeline, type TimelineItem } from "@/components/Timeline";
 import { SEOHead } from "@/components/SEOHead";
 import { Link } from "react-router-dom";
@@ -54,11 +54,11 @@ export function Experience() {
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -18 }}
       transition={{ duration: 0.35 }}
-      className="page-shell py-16 sm:py-24"
+      className="page-shell pt-8 pb-16 sm:pt-12 sm:pb-24"
     >
       <SEOHead
-        title="Work Experience | Full Stack Engineer & AI Developer - Vatsal K. Gurjar"
-        description="Work experience of Vatsal K. Gurjar - Junior Software Engineer at Rang Digitech LLC. React 18, FastAPI, TypeScript, PostgreSQL SaaS development. AI automation pipelines with LangChain and n8n."
+        title="Experience | Vatsal K. Gurjar - Software Engineer"
+        description="Work experience of Vatsal K. Gurjar, Junior Software Engineer at Rang Digitech LLC. Specializing in React, FastAPI, and AI automation workflows."
         canonical="/experience"
       />
 
