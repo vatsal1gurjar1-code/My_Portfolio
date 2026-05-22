@@ -21,5 +21,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!assets/|certificates/|projects/|thumbnails/|Fevicon.png|og-image.png|robots.txt|sitemap.xml|Vatsal_K_Gurjar_Resume.txt|_headers|_redirects).*)",
+      "destination": "/index.html"
+    }
   ]
 }
